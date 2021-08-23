@@ -1,0 +1,130 @@
+.news {
+   padding-top: 70px;
+   margin-bottom: 70px;
+}
+.container {
+   margin: 0 auto;
+   max-width: 1300px;
+}
+.news__body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.news__title {
+   margin-bottom: 40px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 35px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-align: center;
+}
+.news__in {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.news__inner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-left: 30px;
+}
+.news__all {
+   margin-bottom: 20px;
+}
+.news__tit {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 23px;
+   font-weight: 600;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.news__text {
+   border-left: 2px solid rgb(255, 113, 91);;
+   padding-left: 10px;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 17px;
+   line-height: 20px;
+   color: #A79997;
+   text-align:justify;
+   max-width: 950px;
+}
+.news__pict {
+}
+.news__img {
+   max-width: 550px;
+   height: 350px;
+   box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.4);
+   border-radius: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+   }.news__in{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+   }
+   .news__inner{
+      margin-left: 0px;
+   }
+   .news__pict{
+      margin-bottom: 40px;
+   }
+   .news__all{
+      margin-bottom: 35px;
+   }
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+   
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+   
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 290px;
+	}
+   .news__img{
+      max-width: 350px;
+      height: 270px;
+      margin: 0px 10px;
+   }
+   .news__title{
+      font-size: 33px;
+   }
+   .news__all{
+      margin: 0px 10px 35px 10px;
+   }
+
+}
+
+@media screen and (max-width: 320px) {
+	.container {
+		width: 100%;
+	}
+   .news__img{
+      max-width: 280px;
+      height: 240px;
+      margin: 0px 10px;
+   }
+   .news__tit{
+      font-size: 22px;
+   }
+}
+

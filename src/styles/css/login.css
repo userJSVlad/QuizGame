@@ -1,0 +1,152 @@
+.login{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+   transition: all ease 0.8s;
+   z-index: 60;
+}
+.login__form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+}
+.login__box {
+   min-height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.login__back{
+   position: absolute;
+   right: 65px;
+   bottom: -30px;
+   font-size: 14px;
+   color: #a39b9b;
+   max-width: 800px;
+   border: none;
+   cursor: pointer;
+   transition: all 0.4s;
+   border-radius: 30px;
+}
+
+.login__back:hover{
+   color: black;
+}
+
+.login__inner{
+   max-width:400px;
+   background-color: #dbccde;
+   padding: 60px 60px;
+   transition: all 0.5s;
+   transition-delay: 1s;
+}
+
+.login__input {
+   padding: 13px 50px 13px 10px;
+   border: 3px solid white;
+}
+
+.login_eror-login{
+   text-align: center;
+   font-size: 14px;
+   color: red;
+   margin-bottom: 30px;
+}
+
+
+
+.login_eror-password{
+   text-align: center;
+   font-size: 14px;
+   color: red;
+   margin-bottom: 30px;
+}
+.login_eror-email {
+   text-align: center;
+   font-size: 14px;
+   color: red;
+   margin-bottom: 30px;
+}
+
+.login__title{
+   margin-bottom: 20px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 25px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-align: center;
+   color: #a19c9e;
+}
+
+.login__buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 40px;
+}
+.login__click {
+   padding: 15px 30px 15px 30px;
+   background-color: #fff;
+   background-color: #d6b0c4;
+   color: white;
+   text-decoration: none;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login__click-login {
+   padding: 15px 30px 15px 30px;
+   background-color: #b591a4a1;
+   color: white;
+   text-decoration: none;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   transition: all 0.3s;
+   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.login__click:hover{
+   background-color: #ddd5e5;
+}
+
+.login_submit {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 80px 10px 80px;
+   font-size: 14px;
+   color: white;
+   max-width: 800px;
+   background-color: rgb(255, 113, 91);
+   border: none;
+   cursor: pointer;
+   transition: all 0.4s;
+   border-radius: 20px;
+}
+
+.login_submit:hover{
+   background-color: #ddd5e5;
+   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.login__eror{
+   border: 2px solid red;
+}
+
+
+@media screen and (max-width: 320px) {
+	.container {
+		width: 100%;
+	}
+   .login__inner{
+      max-width:300px;
+      padding: 40px 40px;
+   }
+   .login__back {
+      right: 57px;
+   }
+
+}

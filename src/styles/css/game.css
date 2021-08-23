@@ -1,0 +1,245 @@
+.game__container {
+   margin: 0 auto;
+   max-width: 1200px;
+}
+.game-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.game__titl {
+   margin: 70px 0px 20px 0px;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 48px;
+   line-height: 65px;
+   color: #2C2C2C;
+}
+
+.game__subject-title{
+   margin: 30px 0px 20px 0px;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 23px;
+   line-height: 30px;
+   text-align: center;
+   color: #0B132A;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   text-align: start;
+   color: #ababb0;
+}
+
+.game__subject-inner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 80px;
+}
+.game__subject-in {
+   margin-right: 20px;
+}
+.game__subject-in:nth-child(3){
+   margin-right: 0px;
+}
+.game__subjact-pict {
+   position: relative;
+   padding-bottom: 56px;
+}
+.game__subjact-img {
+   width: 350px;
+   height: 350px;
+}
+.game__subjact-button {
+   position: absolute;
+   right: 50%;
+   bottom: 10px;
+   border: none;
+   transform: translate(50%, 0);
+   padding: 15px 30px 15px 30px;
+   background: #a2e0f2;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 20px;
+   text-align: center;
+   transition: 0.5s;
+   width: 350px;
+   color: white;
+}
+
+.game__subjact-button:hover{
+   background-color: #d6b8e0;
+}
+
+.game__subjact-button a{
+   color: black;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+.game__planets-inner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 80px;
+}
+.game__planets-in {
+   margin-right: 20px;
+}
+.game__planets-in:nth-child(3){
+   margin-right: 0px;
+}
+.game__planets-pict {
+   position: relative;
+   padding-bottom: 56px;
+}
+.game__planets-img {
+   width: 350px;
+   height: 350px;
+}
+.game__planets-button {
+   position: absolute;
+   right: 50%;
+   bottom: 10px;
+   border: none;
+   transform: translate(50%, 0);
+   padding: 15px 30px 15px 30px;
+   background: #a2e0f2;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 20px;
+   text-align: center;
+   transition: 0.5s;
+   width: 350px;
+   color: white;
+}
+
+.game__planets-button:hover{
+   background-color: #86b5fc;
+}
+
+.game__planets-button a{
+   color: black;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+   }
+   .game__subject-inner{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+   }
+   .game__subject-in:nth-child(2){
+      margin-right: 0px;
+   }
+   .game__planets-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+   }
+   .game__planets-in:nth-child(2){
+      margin-right: 0px;
+   }
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+   
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 290px;
+	}
+   .game__titl {
+      text-align: center;
+      font-size: 40px;
+   }
+   .game__subject-in{
+      margin-right: 0px;
+      margin-bottom: 30px;
+   }
+   .game__planets-in{
+      margin-right: 0px;
+      margin-bottom: 30px;
+   }
+   .game__subject-inner{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+   }
+   .game__subject-title{
+      text-align: center;
+   }
+
+   .game__planets-inner{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+   }
+
+}
+@media screen and (max-width: 320px) {
+	.container {
+		width: 100%;
+	}
+   .game__subject-inner{
+      margin-left: 40px;
+   }
+   .game__subjact-img {
+      width: 300px;
+   }
+   .game__subjact-button {
+      width: 300px;
+   }
+   .game__titl {
+      text-align: center;
+      font-size: 33px;
+   }
+   .game__subject-title {
+      font-size: 21px;
+   }
+
+   .game__planets-inner{
+      margin-left: 40px;
+   }
+   .game__planets-img {
+      width: 300px;
+   }
+   .game__planets-button {
+      width: 300px;
+   }
+   .game__titl {
+      text-align: center;
+      font-size: 33px;
+   }
+   .game__planets-title {
+      font-size: 21px;
+   }
+}
